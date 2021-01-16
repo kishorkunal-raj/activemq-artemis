@@ -14,6 +14,21 @@ matrix:
       jdk: openjdk14
       env:
         - EXAMPLES_PROFILE="noRun"
+    - os: linux
+      arch: ppc64le
+      jdk: openjdk8
+      env:
+        - EXAMPLES_PROFILE="release"
+    - os: linux
+      arch: ppc64le
+      jdk: openjdk11
+      env:
+        - EXAMPLES_PROFILE="noRun"
+    - os: linux
+      arch: ppc64le
+      jdk: openjdk14
+      env:
+        - EXAMPLES_PROFILE="noRun"
 
 # clean out Artemis artifacts from the cache
 before_install:
